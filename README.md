@@ -1,39 +1,66 @@
-# IdSw2
+# Legibilidad
+| Asignatura | Enlace al repo | Reto|
+|------------|---------------|------|
+| Progra 1  | [Repositorio](https://github.com/rubensetien/prg1-22-23) | [Reto](https://github.com/rubensetien/prg1-22-23/blob/patch-1/Reto%20CCCF%20Rub%C3%A9n%20Seti%C3%A9n)
+| Progra 2  | [Repositorio]() | [Reto]()|
+| EDA 1     | [Repositorio]() | [Reto]()|
+| EDA 2     | [Repositorio]() | [Reto]()|
 
-Repo de materiales y proyectos de la asignatura **Ingeniería del Software II** del [Grado de Ingeniería Informática](https://www.uneatlantico.es/escuela-politecnica-superior/estudios-grado-oficial-en-ingenieria-informatica) la [Universidad Europea del Atlántico](https://www.uneatlantico.es).
+## 1. Nombres no descriptivos o ambiguos
+| **Proyecto**      | **Archivo**              | **Líneas**  | **Elementos Afectados**              | **Recomendación**                                         |
+|-------------------|--------------------------|-------------|--------------------------------------|-----------------------------------------------------------|
+| Reto Caracol| [v]()| [6]()| `subir` |  `metrosSubidos` |
+| EX003Inheritance| [v]()| `userAdmin`| `isAdmin`|
+| Carrefour| [GenerarCliente]()||Nombre de la clase| `GeneradorCliente.java`|
+|Biblioteca| [Biblioteca.java]()|`Gestor manager`|`gestorDocumentos`|
 
-## Curso *[24][25]*
+## 2. Uso de Nombres Inconsistentes
 
-- [Temario](https://github.com/mmasias/IdSw2/blob/main/README.md)
-  - [A día de hoy, deberíamos saber...](temario/aDiaDeHoy.md)
-  - [Casos de uso](temario/casosDeUso/README.md)
-  - [Ejercicios](temario/ejercicios/README.md)
-- Evaluaciones
-  - Evaluación continua: [Retos!](evaluaciones/retos/README.md)
-  - Exámenes
-    - Parcial: [Enunciado](evaluaciones/examenes/examenParcial/README.md) | Repositorio de trabajo y entrega.
-    - Final: [Enunciado](evaluaciones/examenes/examenFinal/README.md) | Repositorio de trabajo y entrega.
-    - Extraordinario: [Enunciado](evaluaciones/examenes/examenExtraordinario/README.md) | Repositorio de trabajo y entrega.
+| **Proyecto**      | **Archivo**              | **Líneas**  | **Elementos Afectados**              | **Recomendación**                                         |
+|-------------------|--------------------------|-------------|--------------------------------------|-----------------------------------------------------------|
+| Reto Caracol| [v]()| [5]() y [26]()| `coche` | Usar `probabilidadDeslizar`|
+| EX003Inheritance| [v]()| [5-7]()|`capacity`, `size` y `defaultSelection`| `maxItems`, `currentSize` y `selectedIndex`|
+|Carrefour| [v]()|[16]()|`obtenerSiguienteCliente`| Separar en `borrarCliente` y `obtenerSiguienteCliente`|
+|Biblioteca| [v]()| [112]()| Mal escrito `eleminarTodosLosDocumentos`| `eliminarTodosLosDocumentos`|
 
-> ***NOTA:*** Los repositorios de entrega de exámenes estarán disponible días antes del examen. El repositorio con el enunciado del examen se activa al inicio del examen y permitirá entregas hasta la finalización del mismo.
+## 3. Problemas de Sintaxis 
+| **Proyecto**      | **Archivo**              | **Líneas**  | **Elementos Afectados**              | **Recomendación**                                         |
+|-------------------|--------------------------|-------------|--------------------------------------|-----------------------------------------------------------|
+| Reto Caracol| [retoExtendidoCoches.java]()| [47]() | `for (int j = 0; j <= dimension; j = j + 1)`| `for (int j = 0; j <= dimension; j = j + 1){}`|
+|EX003Inheritance| [Admin.java]()| [4]() y [9]()| `isAdmin`| La variable booleana nombrarla `adminRole`|
+|Biblioteca|[GestorAutores.java]()|[33]()|`String nuevoNombre = System.console().readLine();`|`Scanner sc = new Scanner(System.in);` `String nuevoNombre = sc.nextLine();`|
 
-## Herramientas et al
+## 4. Métodos Repetitivos 
+| **Proyecto**      | **Archivo**              | **Líneas**  | **Elementos Afectados**              | **Recomendación**                                         |
+|-------------------|--------------------------|-------------|--------------------------------------|-----------------------------------------------------------|
+| Reto Caracol| [v]()| [5]() y [26]()| `coche` | Usar `probabilidadDeslizar`|
+| EX003Inheritance| [v]()| [5-7]()|`capacity`, `size` y `defaultSelection`| `maxItems`, `currentSize` y `selectedIndex`|
+|Carrefour| [v]()|[16]()|`obtenerSiguienteCliente`| Separar en `borrarCliente` y `obtenerSiguienteCliente`|
+|Biblioteca| [v]()| [112]()| Mal escrito `eleminarTodosLosDocumentos`| `eliminarTodosLosDocumentos`|
 
-- [GIT](https://git-scm.com/) & [GitHub](https://github.com/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [PlantText](https://www.planttext.com/), para usar el formato [PlantUML](https://plantuml.com/es/) al realizar diagramas de:
-  - [actividades](https://plantuml.com/es/activity-diagram-beta)
-  - [estados](https://plantuml.com/es/state-diagram)
-  - [clases](https://plantuml.com/es/class-diagram)
-  - [objetos](https://plantuml.com/es/object-diagram)
-  - [y otros...](https://plantuml.com/es/sitemap-language-specification)
-- [Google Docs](https://drive.google.com/drive/u/0/my-drive)
-- [Plantillas](/documentos/plantillas.md)
+## 2. Uso de Nombres Inconsistentes
 
-## Bibliografía & enlaces interesantes
+| **Proyecto**      | **Archivo**              | **Líneas**  | **Elementos Afectados**              | **Recomendación**                                         |
+|-------------------|--------------------------|-------------|--------------------------------------|-----------------------------------------------------------|
+| Reto Caracol| [v]()| [5]() y [26]()| `coche` | Usar `probabilidadDeslizar`|
+| EX003Inheritance| [v]()| [5-7]()|`capacity`, `size` y `defaultSelection`| `maxItems`, `currentSize` y `selectedIndex`|
+|Carrefour| [v]()|[16]()|`obtenerSiguienteCliente`| Separar en `borrarCliente` y `obtenerSiguienteCliente`|
+|Biblioteca| [v]()| [112]()| Mal escrito `eleminarTodosLosDocumentos`| `eliminarTodosLosDocumentos`|
 
-NOTA: *Algunos enlaces podrían requerir **credenciales de acceso al campus** o a otros espacios colaborativos.*
+## 5. Código no DRY (Don't Repeat Yourself)
+| **Proyecto**      | **Archivo**              | **Líneas**  | **Elementos Afectados**              | **Recomendación**                                         |
+|-------------------|--------------------------|-------------|--------------------------------------|-----------------------------------------------------------|
+| Reto Caracol| [v]()| [5]() y [26]()| `coche` | Usar `probabilidadDeslizar`|
+| EX003Inheritance| [v]()| [5-7]()|`capacity`, `size` y `defaultSelection`| `maxItems`, `currentSize` y `selectedIndex`|
+|Carrefour| [v]()|[16]()|`obtenerSiguienteCliente`| Separar en `borrarCliente` y `obtenerSiguienteCliente`|
+|Biblioteca| [v]()| [112]()| Mal escrito `eleminarTodosLosDocumentos`| `eliminarTodosLosDocumentos`|
 
-- Hoja de asistencia et-al
-- Libro de la asignatura
-- Este repo, versión de ediciones pasadas
+## 6. Falta de encapsulación 
+| **Proyecto**      | **Archivo**              | **Líneas**  | **Elementos Afectados**              | **Recomendación**                                         |
+|-------------------|--------------------------|-------------|--------------------------------------|-----------------------------------------------------------|
+| Reto Caracol| [v]()| [5]() y [26]()| `coche` | Usar `probabilidadDeslizar`|
+| EX003Inheritance| [v]()| [5-7]()|`capacity`, `size` y `defaultSelection`| `maxItems`, `currentSize` y `selectedIndex`|
+|Carrefour| [v]()|[16]()|`obtenerSiguienteCliente`| Separar en `borrarCliente` y `obtenerSiguienteCliente`|
+|Biblioteca| [v]()| [112]()| Mal escrito `eleminarTodosLosDocumentos`| `eliminarTodosLosDocumentos`|
+
+
