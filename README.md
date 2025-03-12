@@ -1,7 +1,7 @@
 # Legibilidad
 | Asignatura | Enlace al repo | Reto|
 |------------|---------------|------|
-| Progra 1  | [Repositorio](https://github.com/rubensetien/prg1-22-23) | [Reto](https://github.com/rubensetien/prg1-22-23/blob/patch-1/Reto%20CCCF%20Rub%C3%A9n%20Seti%C3%A9n)
+| Progra 1  | [Repositorio](https://github.com/rubensetien/prg1-22-23) | [Reto](https://github.com/rubensetien/prg1-22-23/blob/main/Whac-A-MoleRub%C3%A9nSeti%C3%A9n.java)
 | Progra 2  | [Repositorio]() | [Reto]()|
 | EDA 1     | [Repositorio]() | [Reto]()|
 | EDA 2     | [Repositorio]() | [Reto]()|
@@ -9,7 +9,7 @@
 ## 1. Nombres no descriptivos o ambiguos
 | **Proyecto**      | **Archivo**              | **Líneas**  | **Elementos Afectados**              | **Recomendación**                                         |
 |-------------------|--------------------------|-------------|--------------------------------------|-----------------------------------------------------------|
-| Reto Caracol| [v]()| [6]()| `subir` |  `metrosSubidos` |
+| Reto WhacAMole| [WhacAMole.java](https://github.com/rubensetien/prg1-22-23/blob/main/Whac-A-MoleRub%C3%A9nSeti%C3%A9n.java)| [6]()| `subir` |  `metrosSubidos` |
 | EX003Inheritance| [v]()| `userAdmin`| `isAdmin`|
 | Carrefour| [GenerarCliente]()||Nombre de la clase| `GeneradorCliente.java`|
 |Biblioteca| [Biblioteca.java]()|`Gestor manager`|`gestorDocumentos`|
